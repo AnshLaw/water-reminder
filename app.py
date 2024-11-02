@@ -1,14 +1,13 @@
-import discord
+import nextcord
 import asyncio
-import os
 
 # Initialize the client
-intents = discord.Intents.default()
+intents = nextcord.Intents.default()
 intents.message_content = True
-client = discord.Client(intents=intents)
+client = nextcord.Client(intents=intents)
 
 # Replace with your bot's token
-TOKEN = 'MTMwMjIzOTQ1NzMwNjc0MjgzNw.GsJ47n.Q2CS7oyeIQuJIOFL_KGlwdYTGfvW-lLbTKQkiU'
+TOKEN = 'MTMwMjIzOTQ1NzMwNjc0MjgzNw.GuaExe.bbhjwn9h1BNILFZImDQ-152Nwuk8HzgzMOtNug'
 
 # Function to send reminder message every 30 minutes
 async def water_reminder(user):
